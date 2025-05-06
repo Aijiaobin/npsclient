@@ -44,7 +44,7 @@ android {
         val keyPassword = envKeyPassword ?: fileProps.getProperty("keyPassword")
         val storePassword = envStorePassword ?: fileProps.getProperty("storePassword")
 
-        if (keyAlias != null && keyPassword != null && storePassword != null) {
+        /*if (keyAlias != null && keyPassword != null && storePassword != null) {
             create("release") {
                 storeFile =
                     if (!envStoreFile.isNullOrBlank())
@@ -55,7 +55,7 @@ android {
                 this.keyAlias = keyAlias
                 this.keyPassword = keyPassword
             }
-        }
+        }*/
     }
     buildTypes {
         release {
@@ -64,7 +64,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.findByName("release")
+            //signingConfig = signingConfigs.findByName("release")
         }
     }
     compileOptions {

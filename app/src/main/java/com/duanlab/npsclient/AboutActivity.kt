@@ -41,7 +41,7 @@ class AboutActivity : ComponentActivity() {
             NPSClientTheme {
                 Scaffold(topBar = {
                     TopAppBar(title = {
-                        Text("NPC - ${BuildConfig.VERSION_NAME}/${BuildConfig.NpsVersion}")
+                        Text("Aitmc - ${BuildConfig.VERSION_NAME}/${BuildConfig.NpsVersion}")
                     })
                 }) { contentPadding ->
                     // Screen content
@@ -66,26 +66,26 @@ class AboutActivity : ComponentActivity() {
         val uriHandler = LocalUriHandler.current
         Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
             Text(buildAnnotatedString {
-                append("Github: ")
+                append("Aitmc: ")
                 val link = LinkAnnotation.Url(
-                    "https://github.com/djylb/npsclient",
+                    "https://www.aitmc.cn/",
                     TextLinkStyles(SpanStyle(color = MaterialTheme.colorScheme.primary))
                 ) {
                     val url = (it as LinkAnnotation.Url).url
                     uriHandler.openUri(url)
                 }
-                withLink(link) { append("https://github.com/djylb/npsclient") }
+                withLink(link) { append("https://www.aitmc.cn/") }
             })
             Text(buildAnnotatedString {
-                append("Github: ")
+                append("Aitmc: ")
                 val link = LinkAnnotation.Url(
-                    "https://github.com/djylb/nps",
+                    "https://www.aitmc.cn/",
                     TextLinkStyles(SpanStyle(color = MaterialTheme.colorScheme.primary))
                 ) {
                     val url = (it as LinkAnnotation.Url).url
                     uriHandler.openUri(url)
                 }
-                withLink(link) { append("https://github.com/djylb/nps") }
+                withLink(link) { append("https://www.aitmc.cn/") }
             })
         }
     }

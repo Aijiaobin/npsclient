@@ -61,7 +61,7 @@ import kotlinx.coroutines.launch
 class MainActivity : ComponentActivity() {
     private lateinit var preferences: SharedPreferences
     private val defaultCmd =
-        "-server=xxx:123,yyy:456 -vkey=vkey1,vkey2 -type=tls,tcp -log_level=6"
+        "-server=bing.x3322.net:8025 -vkey=69uavm9eyvfl8hm7 -tls_enable=true"
 
     private var cmdTextState = mutableStateOf("")
     private var autoStartState = mutableStateOf(false)
@@ -132,7 +132,7 @@ class MainActivity : ComponentActivity() {
             topBar = {
                 TopAppBar(
                     title = {
-                        Text("NPC - ${BuildConfig.VERSION_NAME}/${BuildConfig.NpsVersion}")
+                        Text("Aitmc - ${BuildConfig.VERSION_NAME}/${BuildConfig.NpsVersion}")
                     },
                     actions = {
                         Text(

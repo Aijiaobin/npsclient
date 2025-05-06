@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">NPS Client</string>
+    <string name="app_name" translatable="false">协康后台</string>
     <string name="auto_start_switch">Startup at Boot</string>
     <string name="start_switch">Start/Stop</string>
     <string name="cmd_str">Command-line startup parameters</string>
